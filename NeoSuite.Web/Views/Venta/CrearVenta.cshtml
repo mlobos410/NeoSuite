@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="img/favicon.html">
+
+    <title>NeoSuite</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="~/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css">
+
+    <!--right slidebar-->
+    <link href="~/css/slidebars.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/css/style-responsive.css" rel="stylesheet" />
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <section id="container">
+        <!--header start-->
+        <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+            </div>
+            <!--logo start-->
+            <a href="index-2.html" class="logo">Neo<span>Suite</span></a>
+            <!--logo end-->
+            <div class="top-nav ">
+                <!--search & user info start-->
+                <ul class="nav pull-right top-menu">
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="img/avatar1_small.jpg">
+                            <span class="username">Admin Admin</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li><a href="#"><i class=" fa fa-suitcase"></i>Perfil</a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i> Ajustes</a></li>
+                            <li><a href="#"><i class="fa fa-bell-o"></i> Notificaciones</a></li>
+                            <li><a href="#"><i class="fa fa-key"></i> Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!--search & user info end-->
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li>
+                        <a href="/Admin/Dashboard">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa fa-money"></i>
+                            <span>Venta</span>
+                        </a>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="javascript:;" >
+                            <i class="fa fa-download"></i>
+                            <span>Cargar</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="/Producto/Cargar">Producto</a></li>
+                            <li><a href="/Proveedor/Cargar">Proveedor</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section class="panel">
+                            <header class="panel-heading">
+                                Nueva Venta
+                            </header>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label>Producto</label>
+                                        <select class="form-control input-sm m-bot15">
+                                            <option>Seleccione Producto</option>
+                                            <option>Coca Cola 2l</option>
+                                            <option>Hamburguesa 200grs.</option>
+                                            <option>Sprite 1l</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Cantidad</label>
+                                        <input type="text" class="form-control" placeholder="Cantidad">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Precio (unidad)</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                Precio Normal - $2.000
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                Precio Rebajado - $1.900
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Forma de Pago</label>
+                                        <select class="form-control input-sm m-bot15">
+                                            <option>Seleccione Forma de Pago</option>
+                                            <option>Efectivo</option>
+                                            <option>Tarjeta Crédito</option>
+                                            <option>Tarjeta Débito</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-info">GUARDAR</button>
+                                </form>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--main content end-->
+        <!--footer start-->
+        <footer class="site-footer">
+            <div class="text-center">
+                2022 &copy; NeoSuite.
+                <a href="#" class="go-top">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+        </footer>
+        <!--footer end-->
+    </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="~/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="~/js/jquery.scrollTo.min.js"></script>
+    <script src="~/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="~/js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="~/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/jquery.customSelect.min.js"></script>
+    <script src="~/js/respond.min.js"></script>
+
+    <!--right slidebar-->
+    <script src="~/js/slidebars.min.js"></script>
+
+    <!--common script for all pages-->
+    <script src="~/js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="~/js/sparkline-chart.js"></script>
+    <script src="~/js/easy-pie-chart.js"></script>
+    <script src="~/js/count.js"></script>
+
+    <script>
+
+        //owl carousel
+
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                autoPlay: true
+
+            });
+        });
+
+        //custom select box
+
+        $(function () {
+            $('select.styled').customSelect();
+        });
+
+    </script>
+
+</body>
+
+</html>
